@@ -32,7 +32,7 @@
 
 function movieSearch(){
         movie=moviename.value
-        fetch(`http://www.omdbapi.com/?t=${encoddeURIComponent(movie)}&apikey=abd160a8`).then(data=>data.json()).then(cData=>displayData(cData))
+        fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(movie)}&apikey=abd160a8`).then(data=>data.json()).then(cData=>displayData(cData))
 
     function displayData(dataArray){
         name=movie
